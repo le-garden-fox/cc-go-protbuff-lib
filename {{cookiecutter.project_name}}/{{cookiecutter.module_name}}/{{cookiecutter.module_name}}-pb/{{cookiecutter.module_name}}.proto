@@ -1,0 +1,18 @@
+syntax = "proto3";
+package {{cookiecutter.module_name}};
+
+// this is the path folder name as well
+option go_package = "./{{cookiecutter.module_name}}/{{cookiecutter.module_name}}-pb";
+
+message {{cookiecutter.module_name | capitalize }} {
+
+}
+
+// will wrap the Greeting
+message {{cookiecutter.module_name | capitalize }}Request { {{cookiecutter.module_name | capitalize }} greeting = 1; }
+message {{cookiecutter.module_name | capitalize }}Response { string result = 1; }
+
+service {{cookiecutter.module_name | capitalize }}Service {
+  // define unary API
+  rpc {{cookiecutter.module_name | capitalize }}({{cookiecutter.module_name | capitalize }}Request) returns ({{cookiecutter.module_name | capitalize }}Response) {};
+}

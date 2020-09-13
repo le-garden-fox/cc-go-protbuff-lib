@@ -2,7 +2,7 @@ syntax = "proto3";
 package {{cookiecutter.module_name}};
 
 // this is the path folder name as well
-option go_package = "./{{cookiecutter.module_name}}/{{cookiecutter.module_name}}-pb";
+option go_package = "./{{cookiecutter.module_name}}/{{cookiecutter.module_name}}pb";
 
 message {{cookiecutter.module_name | capitalize }} {
 

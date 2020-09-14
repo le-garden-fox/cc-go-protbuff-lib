@@ -8,8 +8,8 @@ message {{cookiecutter.module_name | capitalize }} {
 
 }
 
-// will wrap the Greeting
-message {{cookiecutter.module_name | capitalize }}Request { {{cookiecutter.module_name | capitalize }} greeting = 1; }
+// will wrap the {{cookiecutter.module_name | capitalize }}
+message {{cookiecutter.module_name | capitalize }}Request { {{cookiecutter.module_name | capitalize }} request = 1; }
 message {{cookiecutter.module_name | capitalize }}Response { string result = 1; }
 
 service {{cookiecutter.module_name | capitalize }}Service {
